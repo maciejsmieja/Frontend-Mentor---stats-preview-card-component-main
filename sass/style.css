@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 250px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 65.5%;
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+.footer {
+  flex: 1 100%;
+  text-align: center;
+  font-size: 11px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 2em 1em;
+}
+.footer a {
+  color: hsl(228deg, 29%, 52%);
+}
+
+.stats-data {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.stats-text {
+  text-transform: uppercase;
+  padding: 0.5em 0;
+  font-size: 0.7rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+.main {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2em;
+}
+
+.image {
+  position: relative;
+  min-height: 240px;
+  background-image: url(../images/image-header-mobile.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.image__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(157, 0, 255, 0.319);
+}
+
+.section {
+  background-color: rgb(27, 25, 56);
+  color: hsl(0deg, 0%, 100%);
+}
+.section__title {
+  font-size: 1.4rem;
+  padding: 1.5em 2.5em;
+  text-align: center;
+}
+.section__title--violet {
+  color: hsl(277deg, 64%, 61%);
+}
+.section__text {
+  text-align: center;
+  padding: 0 2.5em;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+.section__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+.section__stats--one {
+  padding: 1em;
+}
+.section__stats--two {
+  padding: 1em;
+}
+.section__stats--three {
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5em;
+    max-height: 500px;
+    max-width: 1500px;
+  }
+  .main .image {
+    width: 45vw;
+  }
+  .main .section {
+    width: 55vw;
+    padding: 3em;
+  }
+  .main .section__title {
+    text-align: left;
+    padding: 1em 1em;
+    font-size: 2rem;
+  }
+  .main .section__text {
+    text-align: left;
+    padding: 2em 2em;
+    font-size: 1rem;
+  }
+  .main .section__stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
